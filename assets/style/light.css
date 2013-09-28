@@ -23,7 +23,7 @@ a, a:hover {
 }
 
 .content {
-	color: #333;
+	color: #444;
 	
 }
 
@@ -36,7 +36,7 @@ a, a:hover {
 }
 
 .author {
-	color: #bbb;
+	color: #999;
 }
 
 .author-name {
@@ -107,6 +107,19 @@ a, a:hover {
 	margin-left: 5px;
 }
 
+.post-divider {
+	width: 30%;
+	border: none;
+	border-bottom: 2px solid #bbb;
+}
+
+/*******************************************************/
+/* NAVIGATION LINKS                                    */
+/*******************************************************/
+.nav-links {
+	margin-top: 30px;
+}
+
 .nav-link {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -115,8 +128,70 @@ a, a:hover {
 	display: inline-block;
 }
 
-.text-orange {
-	color: #f54066;	
+/*******************************************************/
+/* COMMENTS                                            */
+/*******************************************************/
+.comments {
+	margin-top: 30px;
+}
+.comment-heading {
+	margin-top: 50px;
+}
+.comments p {
+	line-height: 25px;
+}
+
+.comment-author {
+	position: absolute;
+	font-size: 13px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.comment-author-name {
+	font-weight: 700;
+	color: #555;
+	position: absolute;
+	bottom: 20px;
+	background-color: #fefefe;
+	padding: 3px 40px 3px 10px;
+	right: 40px;
+	z-index: 1;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.comment-author-avatar {
+	border: 5px solid #ddd;
+	z-index: 9999;
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+}
+
+.comment-time {
+	color: #999;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	width: 150px;
+	right: 0;
+}
+
+.comment-content {
+	font-size: 14px;
+	color: #444;
+}
+
+.comment-single {
+	padding: 20px;
+	padding-right: 110px;
+	position: relative;
+	z-index: 1;
+}
+
+.comment-single:nth-child(2n) {
+	background-color: #e7e7e7;
 }
 
 /*******************************************************/
