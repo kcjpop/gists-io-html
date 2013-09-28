@@ -130,40 +130,30 @@ a, a:hover {
 }
 
 .comment-author {
-	position: absolute;
 	font-size: 13px;
-	bottom: 10px;
-	right: 10px;
 }
 
 .comment-author-name {
 	font-weight: 700;
 	color: #555;
-	position: absolute;
-	bottom: 20px;
 	background-color: #fefefe;
-	padding: 3px 40px 3px 10px;
-	right: 40px;
+	padding: 3px 15px;
 	z-index: 1;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-left: -10px;
+	position: relative;
 }
 
 .comment-author-avatar {
 	border: 5px solid #e7e7e7;
-	z-index: 9999;
-	position: absolute;
-	bottom: 20px;
-	right: 0;
+	z-index: 2;
+	position: relative;
 }
 
 .comment-time {
 	color: #999;
 	text-align: right;
-	position: absolute;
-	bottom: 0;
-	width: 150px;
-	right: 0;
 }
 
 .comment-content {
@@ -172,8 +162,7 @@ a, a:hover {
 }
 
 .comment-single {
-	padding: 20px 110px 20px 20px;
-	position: relative;
+	padding: 20px;
 	z-index: 1;
 }
 
@@ -235,5 +224,41 @@ a, a:hover {
 	.sidebar {
 		position: fixed;
 		top: 60px;
+	}
+
+	.comment-author {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.comment-author-name {
+		position: absolute;
+		bottom: 20px;
+		right: 40px;
+		border-radius: 0;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		padding: 3px 40px 3px 10px;
+	}
+
+	.comment-author-avatar {
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+	}
+
+	.comment-time {
+		position: absolute;
+		bottom: 0;
+		width: 150px;
+		right: 0;
+	}
+
+	.comment-single {
+		padding: 20px;
+		padding-right: 110px;
+		position: relative;
+		z-index: 1;
 	}
 }
