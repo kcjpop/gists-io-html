@@ -43,6 +43,19 @@ a, a:hover {
 	text-transform: uppercase;
 }
 
+
+.author-bio dt {
+	width: auto;
+}
+
+.author-bio dd {
+	margin-left: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+	text-align: left;
+}
+
+
 .author-links {
 	list-style-type: none;
 	text-align: center;
