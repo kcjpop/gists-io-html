@@ -1,3 +1,19 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+/**
+ * 
+ * CONTENTS..................You're reading it
+ * ELEMENTS..................Styles applied to root HTML elements
+ * COMPONENTS................Site's component
+ * 
+ */
+
+
+/*------------------------------------*\
+    $ELEMENTS
+\*------------------------------------*/
 body {
 	background-color: #efefef;
 	font-size: 13px;
@@ -15,6 +31,9 @@ a, a:hover {
 	text-decoration: underline;
 }
 
+/*------------------------------------*\
+    $MAIN COMPONENT
+\*------------------------------------*/
 .main {
 	margin: 60px 0;
 	position: relative;

@@ -1,127 +1,170 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>The Programmer's Bill of Rights | Gists.io</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./assets/style/light.css" id="main-style">
-	<link href="//fonts.googleapis.com/css?family=Roboto:400,700,900,300|Roboto+Slab:400,300&subset=latin" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="container">
-	<div class="main">
-		<div class="row">
-			<div class="col-md-9 col-lg-9">
-				<div class="content">
-<div class="gists-list">
-	<div class="gist-item">
-		<h3><a href="post.html">Lorem Ipsum Dolor Sit Amet</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">The Rights of Developers</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">10x Programmers</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">A Very Long Title Does Not Make Your Gist More Appealing. But As Long As It Wants</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">Lorem Ipsum Dolor Sit Amet</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">Lorem Ipsum Dolor Sit Amet</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">The Rights of Developers</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">10x Programmers</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">A Very Long Title Does Not Make Your Gist More Appealing. But As Long As It Wants</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-	<div class="gist-item">
-		<h3><a href="post.html">Lorem Ipsum Dolor Sit Amet</a></h3>
-		<p class="published">29 Sep, 2013</p>
-	</div>
-</div>
+	<head>
+		<title>Home | Gists.io</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./assets/style/main.css" id="main-style">
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&subset=latin" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar nav-transparent" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle gists-navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
 
-<ul class="gists-pager">
-	<li><i class="icon-caret-left"></i> Previous</li>
-	<li><a href="#">Next <i class="icon-caret-right"></i></a></li>
-</ul>
+					<a class="navbar-brand logo" href="index.html">gists.io</a>
 				</div>
-			</div>
-			<div class="col-md-3 col-lg-3">
-				<div class="sidebar">
-					<div class="author">
-						<img src="//gravatar.com/avatar/62ff5afcdd28639f3aac24a7dca7ea47?s=100" class="img-circle">
-						<h5 class="author-name">Jeff Atwood</h5>
-						<ul class="author-links">
-							<li><a href=""><i class="icon-facebook icon-large"></i></a></li>
-							<li><a href=""><i class="icon-github icon-large"></i></a></li>
-							<li><a href=""><i class="icon-bitbucket icon-large"></i></a></li>
-							<li><a href=""><i class="icon-twitter icon-large"></i></a></li>
-							<li><a href=""><i class="icon-tumblr icon-large"></i></a></li>
-						</ul>
-						<dl class="dl-horizontal author-bio">
-							<dt><i class="icon-map-marker"></i></dt>
-							<dd>Houston, TX</dd>
-							<dt><i class="icon-home"></i></dt>
-							<dd>BrandExtract</dd>
-							<dt tilte="Public repos"><i class="icon-laptop"></i></dt>
-							<dd>25</dd>
-							<dt title="Followers"><i class="icon-user"></i></dt>
-							<dd>20</dd>
-							<dt tilte="Following"><i class="icon-group"></i></dt>
-							<dd>25</dd>
-						</dl>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-right nav-search" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control input-sm" placeholder="Search by #hashtag">
+						</div>
+						<button type="submit" class="btn btn-success btn-sm">SIGN IN <i class="icon-github"></i></button>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right gists-navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Expore</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</header>
+		<main role="main">
+			<section class="landing-image">
+				<div class="landing-content">
+					<h1 class="landing-tagline">Share your thoughts</h1>
+					<div class="landing-email-form">
+						<form role="form" class="form-inline">
+							<div class="form-group">
+								<label class="landing-label landing-gists-url">https://gists.io/</label>
+								<input autofocus autocomplete="off" type="text" class="form-control landing-input input-blogname input-simple" name="email" placeholder="username">
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">View blog</button>
+							</div>
+						</form>
+					</div>
+					<h3 class="landing-tagline">or</h3>
+					<div class="">
+						<form role="form" class="form-inline">
+							<div class="form-group">
+								<input type="email" class="form-control landing-input input-email input-simple" name="email" placeholder="Enter your email. No spam guarantee.">
+							</div>
+							<div class="form-group form-group-beta-apply">
+								<button type="submit" class="btn btn-success">Apply for private beta</button>
+							</div>
+						</form>
 					</div>
 
-					<hr class="sidebar-divider">
-
-					<p class="go-to-home">
-						<a href="#" title="Come back home"><i class="icon-home icon-2x"></i></a>
-					</p>
-
-					<p class="style-switcher">
-						<a href="#" data-style="dark" class="style-option dark"></a>
-						<a href="#" data-style="light" class="style-option light"></a>
-					</p>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
+				<div class="landing-copyright">
+					Image by <a href="http://www.flickr.com/photos/tiina-niskanen/" target="_blank">Tiina M Niskanen</a>. CC-3.0 licensed.
+				</div>
+			</section>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//code.jquery.com/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<section class="container editor-pick">
+				<h1>Editor's pick</h1>
+				<div class="row">
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="editor-pick-item">
+							<img src="//placehold.it/150x150" alt="" class="img-circle">
+							<div class="caption">
+								<h3><a href="#" title="">Cut the clip</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat exercitationem blanditiis eum necessitatibus reiciendis maiores? Explicabo, atque, quia, culpa eveniet officia repellendus iusto tempora fugit in vitae inventore aliquam nam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+
+		<p>
+			<footer class="text-right">&copy; InHuman 2013</p>	
+		</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script>
-$(function() {
-	$('a.style-option').click(function(e) {
-		e.preventDefault();
-		var _this = $(this),
-			_link = $('#main-style'),
-			_href = _link.prop('href'),
-			_url = _href.substring(0, _href.lastIndexOf('/'));
-		
-		_link.prop('href', _url + '/' + _this.data('style') + '.css');
+	$(function() {
+		$('section.landing-image').css('height', $(window).height() - 50);
 	});
-});
 </script>
-</body>
+	</body>
 </html>
