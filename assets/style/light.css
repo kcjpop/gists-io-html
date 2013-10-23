@@ -211,6 +211,16 @@ a, a:hover {
 	z-index: 1;
 }
 
+.comment-single blockquote {
+	padding: 0;
+	border: none;
+}
+
+.comment-single blockquote p {
+	font-size: 0.85em;
+	font-weight: 300;
+}
+
 .comment-single:nth-child(2n) {
 	background-color: #e7e7e7;
 }

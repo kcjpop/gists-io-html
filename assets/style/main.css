@@ -10,7 +10,7 @@
  * NAV.......................Site's navigator
  * NAV SEARCH................
  * LANDING...................Landing component in homepage
- * EDITOR PICK...............
+ * LANDING TESTIMONIALS......
  * UTILITIES.................
  * RESPONSIVE XS.............Responsive rules for @screen-xs
  * RESPONSIVE SM.............Responsive rules for @screen-sm
@@ -158,25 +158,38 @@ a, a:hover {
 	border-radius: 3px;
 }
 
-/*------------------------------------*\
-    $EDITOR PICK
-\*------------------------------------*/
-.editor-pick h1 {
+.landing-heading {
 	font-weight: 700;
 	text-align: center;
 	margin: 40px 0;
 }
 
-.editor-pick-item {
+.landing-screenshots {
+
+}
+
+.landing-features-item {
+	margin-bottom: 30px;
+}
+
+/*------------------------------------*\
+    $LANDING TESTIMONIALS
+\*------------------------------------*/
+.landing-testimonials-item {
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.editor-pick-item .caption h3 {
+.landing-testimonials-item .caption h3 {
 	font-weight: 300;
 }
 
-.editor-pick-item .caption p {
+.landing-testimonials-item .caption p {
+	text-align: left;
+}
+
+.landing-testimonials-item blockquote {
+	border-left: 5px solid #ddd;
 	text-align: left;
 }
 
