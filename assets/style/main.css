@@ -6,12 +6,16 @@
  * 
  * CONTENTS..................You're reading it
  * ELEMENTS..................Styles applied to root HTML elements
+ * UTILITIES.................
  * LOGO......................Obviously the site's logo
  * NAV.......................Site's navigator
  * NAV SEARCH................
  * LANDING...................Landing component in homepage
  * LANDING TESTIMONIALS......
- * UTILITIES.................
+ * SIDEBAR...................
+ * SIDEBAR AUTHOR............
+ * COMMENTS..................
+ * NAVIGATION LINKS..........
  * RESPONSIVE XS.............Responsive rules for @screen-xs
  * RESPONSIVE SM.............Responsive rules for @screen-sm
  * RESPONSIVE MD.............Responsive rules for @screen-md
@@ -46,6 +50,20 @@ a, a:hover {
 }
 
 /*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
+.input-simple
+{
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+.main {
+	padding-top: 70px;
+}
+
+/*------------------------------------*\
     $LOGO
 \*------------------------------------*/
 .logo {
@@ -58,8 +76,8 @@ a, a:hover {
 /*------------------------------------*\
     $NAV
 \*------------------------------------*/
-.nav-transparent {
-	background-color: transparent;
+.nav-white {
+	background-color: #fff;
 	border: none;
 }
 
@@ -98,10 +116,17 @@ a, a:hover {
 .landing-tagline {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 700;
-	color: #333;
-	padding-bottom: 30px;
+	color: #fff;
+	font-size: 60px;
+	padding: 20px 30px;
 	display: inline-block;
 	opacity: 0.8;
+	background-color: #333;
+}
+
+.landing-tagline-light {
+	color: #ddd;
+	font-size: 20px;
 }
 
 .landing-email-form {
@@ -204,33 +229,177 @@ a, a:hover {
 }
 
 /*------------------------------------*\
-    $UTILITIES
+    $SIDEBAR
 \*------------------------------------*/
-.input-simple
-{
-  outline: none;
-  border:none !important;
-  box-shadow:none !important;
+.sidebar {
+	text-align: center;
+}
+
+.sidebar-divider {
+	border: none;
+	border-bottom: 2px solid #bbb;
+	width: 50%;
+}
+
+
+/*------------------------------------*\
+    $SIDEBAR AUTHOR
+\*------------------------------------*/
+.author {
+	color: #999;
+}
+
+.author-name {
+	text-transform: uppercase;
+}
+
+.author-links {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.author-links > li {
+	display: inline-block;
+}
+.author-links > li > a {
+	display: block;
+	margin-left: 5px;
+	color: #888;
+	text-decoration: none;
+}
+
+.author-links > li > a:hover {
+	color: #bbb;
+}
+
+/*------------------------------------*\
+    $POST
+\*------------------------------------*/
+.post-tags {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 20px 0;
+	text-align: right;
+}
+
+.post-tags-list {
+	list-style-type: none;
+}
+
+.post-tags-list li {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.post-content {
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 200%;
+}
+
+.post-divider {
+	width: 30%;
+	border: none;
+	border-bottom: 2px solid #bbb;
+}
+
+/*------------------------------------*\
+    $COMMENTS
+\*------------------------------------*/
+.comments {
+	margin-top: 30px;
+}
+.comment-heading {
+	margin-top: 50px;
+}
+.comments p {
+	line-height: 25px;
+}
+
+.comment-author {
+	font-size: 13px;
+}
+
+.comment-author-name {
+	font-weight: 700;
+	color: #555;
+	background-color: #fefefe;
+	padding: 3px 15px;
+	z-index: 1;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-left: -10px;
+	position: relative;
+}
+
+.comment-author-avatar {
+	border: 5px solid #ddd;
+	z-index: 2;
+	position: relative;
+}
+
+.comment-time {
+	color: #999;
+	text-align: right;
+}
+
+.comment-content {
+	font-size: 14px;
+	color: #444;
+}
+
+.comment-single {
+	padding: 20px;
+	z-index: 1;
+}
+
+.comment-single blockquote {
+	padding: 0;
+	border: none;
+}
+
+.comment-single blockquote p {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.comment-single:nth-child(2n) {
+	background-color: #e7e7e7;
+}
+
+/*------------------------------------*\
+    $NAVIGATION LINKS
+\*------------------------------------*/
+.nav-links {
+	margin-top: 30px;
+}
+
+.nav-link {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 50%;
+	white-space: nowrap;
+	display: inline-block;
 }
 
 /*------------------------------------*\
     $RESPONSIVE XS
 \*------------------------------------*/
 @media (max-width: 480px) {
-	.landing-gists-url,
-	.landing-tagline {
-		color: #efefef;
+	.landing-content {
+		top: 0;
+	}
+
+	.input-blogname {
+		background-color: #fff;
+		opacity: 0.5;
 	}
 
 	.landing-input {
 		display: inline-block;
 		width: 96%;
-	}
-
-	.landing-tagline {
-		padding: auto;
-		background-color: transparent;
-		color: #efefef;
 	}
 }
 
@@ -238,13 +407,67 @@ a, a:hover {
     $RESPONSIVE SM
 \*------------------------------------*/
 @media (min-width: 480px) and (max-width: 768px) {
+	.landing-content {
+		top: 0;
+	}
+
 	.landing-input {
 		display: inline-block;
 		width: 96%;
 	}
+}
 
-	.landing-gists-url,
-	.landing-tagline {
-		color: #efefef;
+/*------------------------------------*\
+    $RESPONSIVE MD
+\*------------------------------------*/
+@media (min-width: 992px) {
+	.sidebar {
+		position: fixed;
+		top: 60px;
+	}
+
+	.author-bio dt {
+		width: 90px;
+	}
+
+	.author-bio dd {
+		margin-left: 110px;
+	}
+
+	.comment-author {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+
+	.comment-author-name {
+		position: absolute;
+		bottom: 20px;
+		right: 40px;
+		border-radius: 0;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		padding: 3px 40px 3px 10px;
+	}
+
+	.comment-author-avatar {
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+	}
+
+	.comment-time {
+		position: absolute;
+		bottom: 0;
+		width: 150px;
+		right: 0;
+	}
+
+	.comment-single {
+		padding: 20px;
+		padding-right: 110px;
+		position: relative;
+		z-index: 1;
 	}
 }
