@@ -172,6 +172,16 @@ a, a:hover {
 	margin-bottom: 30px;
 }
 
+.landing-features-image {
+	position: absolute;
+	top: 0;
+	left: 25%;
+}
+
+.landing-features-image-wrapper {
+	position: relative;
+}
+
 /*------------------------------------*\
     $LANDING TESTIMONIALS
 \*------------------------------------*/
@@ -207,6 +217,11 @@ a, a:hover {
     $RESPONSIVE XS
 \*------------------------------------*/
 @media (max-width: 480px) {
+	.landing-gists-url,
+	.landing-tagline {
+		color: #efefef;
+	}
+
 	.landing-input {
 		display: inline-block;
 		width: 96%;
@@ -215,6 +230,7 @@ a, a:hover {
 	.landing-tagline {
 		padding: auto;
 		background-color: transparent;
+		color: #efefef;
 	}
 }
 
@@ -225,5 +241,10 @@ a, a:hover {
 	.landing-input {
 		display: inline-block;
 		width: 96%;
+	}
+
+	.landing-gists-url,
+	.landing-tagline {
+		color: #efefef;
 	}
 }
