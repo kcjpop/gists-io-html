@@ -328,7 +328,6 @@ a, a:hover {
 }
 
 .post-content {
-	font-weight: 300;
 	font-size: 1.1em;
 	line-height: 200%;
 }
@@ -392,11 +391,12 @@ a, a:hover {
 .comment-single blockquote {
 	padding: 0;
 	border: none;
+	margin-right: 15px;
 }
 
 .comment-single blockquote p {
-	font-size: 1.1em;
-	font-weight: 300;
+	font-size: 1em;
+	font-weight: 400;
 }
 
 .comment-single:nth-child(2n) {
@@ -474,7 +474,6 @@ a, a:hover {
 		bottom: 10px;
 		right: 10px;
 	}
-
 
 	.comment-author-name {
 		position: absolute;
