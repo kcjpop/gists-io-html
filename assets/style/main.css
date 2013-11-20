@@ -16,6 +16,8 @@
  * SIDEBAR AUTHOR............
  * COMMENTS..................
  * NAVIGATION LINKS..........
+ * ARTICLE LIST..............
+ * ARTICLE SINGLE............
  * RESPONSIVE XS.............Responsive rules for @screen-xs
  * RESPONSIVE SM.............Responsive rules for @screen-sm
  * RESPONSIVE MD.............Responsive rules for @screen-md
@@ -416,6 +418,30 @@ a, a:hover {
 	width: 50%;
 	white-space: nowrap;
 	display: inline-block;
+}
+
+/*------------------------------------*\
+    $ARTICLE LIST
+\*------------------------------------*/
+.article-list {
+
+}
+
+/*------------------------------------*\
+    $ARTICLE SINGLE
+\*------------------------------------*/
+.article-single {
+	margin-bottom: 50px;
+}
+
+.article-single a {
+	text-decoration: none;
+	font-weight: 400;
+	color: #555;
+}
+
+.article-single a:hover {
+	text-decoration: underline;
 }
 
 /*------------------------------------*\
