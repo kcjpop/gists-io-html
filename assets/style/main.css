@@ -381,6 +381,7 @@ a, a:hover {
 	border: 5px solid #ddd;
 	z-index: 2;
 	position: relative;
+	max-width: 100px;
 }
 
 .comment-time {
