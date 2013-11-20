@@ -398,13 +398,13 @@ a, a:hover {
 	z-index: 1;
 }
 
-.comment-single blockquote {
+.comment-content {
 	padding: 0;
 	border: none;
 	margin-right: 15px;
 }
 
-.comment-single blockquote p {
+.comment-content p {
 	font-size: 1em;
 	font-weight: 400;
 }
