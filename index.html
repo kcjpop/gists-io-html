@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./assets/style/main.css" id="main-style">
-		<link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&subset=latin" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&amp;subset=latin" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header>
@@ -29,14 +29,14 @@
 						<div class="form-group">
 							<input type="text" class="form-control input-sm" placeholder="Search by #hashtag">
 						</div>
-						<button type="submit" class="btn btn-success btn-sm">SIGN IN <i class="icon-github"></i></button>
+						<button type="submit" class="btn btn-success btn-sm">SIGN IN <i class="fa fa-github"></i></button>
 					</form>
 
 					<ul class="nav navbar-nav navbar-right gists-navbar-nav">
 						<li><a href="#">Home</a></li>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Expore</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="list.html">Expore</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -75,7 +75,7 @@
 				</div>
 			</section>
 
-			<section class="container landing-features">
+			<section class="container landing-features" id="features">
 				<h1 class="landing-heading">Why you'll fall in love</h1>
 				<div class="row landing-features-item">
 					<div class="col-sm-8 col-md-8 col-lg-8">
@@ -190,9 +190,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script>
-	$(function() {
-		$('section.landing-image').css('height', $(window).height() - 50);
-	});
+$(function() {
+	$('section.landing-image').css('height', $(window).height() - 50);
+});
 </script>
 	</body>
 </html>
