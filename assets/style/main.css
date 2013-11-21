@@ -381,6 +381,7 @@ a, a:hover {
 	border: 5px solid #ddd;
 	z-index: 2;
 	position: relative;
+	max-width: 100px;
 }
 
 .comment-time {
@@ -398,13 +399,13 @@ a, a:hover {
 	z-index: 1;
 }
 
-.comment-single blockquote {
+.comment-content {
 	padding: 0;
 	border: none;
 	margin-right: 15px;
 }
 
-.comment-single blockquote p {
+.comment-content p {
 	font-size: 1em;
 	font-weight: 400;
 }
@@ -527,7 +528,7 @@ a, a:hover {
 @media (min-width: 992px) {
 	.sidebar {
 		position: fixed;
-		top: 60px;
+		top: 80px;
 		width: 25%;
 	}
 
