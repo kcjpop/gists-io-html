@@ -492,7 +492,7 @@ a, a:hover {
 @media (min-width: 992px) {
 	.sidebar {
 		position: fixed;
-		top: 60px;
+		top: 80px;
 		width: 25%;
 	}
 
