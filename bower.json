@@ -1,0 +1,6 @@
+{
+  "name": "gists-io-html",
+  "dependencies": {
+    "sir-trevor-js": "0.3.0"
+  }
+}
