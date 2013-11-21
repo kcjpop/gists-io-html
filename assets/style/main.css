@@ -54,11 +54,14 @@ a, a:hover {
 /*------------------------------------*\
     $UTILITIES
 \*------------------------------------*/
-.input-simple
-{
+.input-simple {
   outline: none;
   border:none !important;
   box-shadow:none !important;
+}
+
+.no-underline {
+	text-decoration: none;
 }
 
 .main {
