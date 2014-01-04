@@ -33,6 +33,11 @@ a:hover {
 .no-underline {
   text-decoration: none;
 }
+.help-text {
+  display: block;
+  text-align: right;
+  color: #aaaaaa;
+}
 .main {
   padding-top: 70px;
 }
@@ -296,11 +301,6 @@ a:hover {
   border: 1px solid #dddddd;
   border-top: none;
   padding: 5px;
-}
-.comment-tab-pane .help-text {
-  display: block;
-  text-align: right;
-  color: #bbbbbb;
 }
 .comment-single {
   padding: 20px 0 3px 20px;

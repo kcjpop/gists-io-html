@@ -6,8 +6,11 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./assets/style/main.css" id="main-style">
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&amp;subset=latin" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./bower_components/sir-trevor-js/sir-trevor.css">
+		<link rel="stylesheet" href="./bower_components/sir-trevor-js/sir-trevor-icons.css">
+		<link rel="stylesheet" href="./assets/style/main.css" id="main-style">
+
 	</head>
 	<body>
 		<header>
@@ -44,8 +47,21 @@
 		</header>
 
 		<main role="main" class="main">
+			<section class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+						<span class="help-text text-right">
+							<code>Ctrl/Cmd + Enter</code> will put your post to live
+						</span>
+						<form action="">
+							<textarea name="" id="" cols="30" rows="10" class="yes-sir"></textarea>
+						</form>
+					</div>
+				</div>
+			</section>
+
 			<section class="container article-list">
-				
+
 				<div class="row">
 					<div class="col-sm-8 col-xs-8 col-md-6 col-lg-6 col-md-offset-2 col-lg-offset-2">
 						<article class="article-single">
@@ -242,7 +258,13 @@
 		<footer>
 			<p class="text-right">&copy; InHuman 2013</p>	
 		</footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="./bower_components/underscore/underscore-min.js"></script>
+	<script src="./bower_components/Eventable/eventable.js"></script>
+	<script src="./bower_components/sir-trevor-js/sir-trevor.min.js"></script>
+	<script src="./assets/js/single.js"></script>
+	
 	</body>
 </html>
