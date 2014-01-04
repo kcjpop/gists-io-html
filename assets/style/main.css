@@ -220,6 +220,9 @@ a:hover {
 .post-article h4 {
   color: #555555;
 }
+.post-article h1 {
+  font-weight: 700;
+}
 .post-tags {
   font-size: 12px;
   text-transform: uppercase;
@@ -327,10 +330,13 @@ a:hover {
   text-decoration: none;
   font-weight: 700;
   padding-top: 5px;
-  color: #999999;
+  color: #555555;
 }
 .article-list-author a:hover {
-  color: #444444;
+  color: #222222;
+}
+.article-list-author a p {
+  font-weight: 300;
 }
 .article-list-loading {
   display: block;
