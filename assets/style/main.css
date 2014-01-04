@@ -276,59 +276,6 @@ a:hover {
   white-space: nowrap;
   display: inline-block;
 }
-.comments {
-  margin-top: 30px;
-}
-.comments p {
-  line-height: 25px;
-}
-.comment-heading {
-  margin-top: 50px;
-}
-.comment-author {
-  font-size: 13px;
-}
-.comment-author-name {
-  font-weight: 700;
-  color: #555;
-  background-color: #fefefe;
-  padding: 3px 15px;
-  z-index: 1;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-left: -10px;
-  position: relative;
-}
-.comment-author-avatar {
-  border: 5px solid #ddd;
-  z-index: 2;
-  position: relative;
-  max-width: 75px;
-}
-.comment-time {
-  color: #999;
-  text-align: right;
-}
-.comment-content {
-  font-size: 14px;
-  color: #444;
-}
-.comment-single {
-  padding: 20px;
-  z-index: 1;
-}
-.comment-single:nth-child(2n) {
-  background-color: #e7e7e7;
-}
-.comment-content {
-  padding: 0;
-  border: none;
-  margin-right: 15px;
-}
-.comment-content p {
-  font-size: 1em;
-  font-weight: 400;
-}
 .comment-tab-pane {
   background: #fff;
   border: 1px solid #dddddd;
@@ -339,6 +286,40 @@ a:hover {
   display: block;
   text-align: right;
   color: #bbbbbb;
+}
+.comment-single {
+  padding: 20px 0 3px 20px;
+  position: relative;
+  z-index: 1;
+}
+.comment-single:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.comment-single .avatar {
+  max-width: 50px;
+  border: 1px solid #eeeeee;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  background-color: #fff;
+}
+.comment-single .avatar:hover {
+  border-color: #999999;
+}
+.comment-single .content {
+  margin-left: 70px;
+}
+.comment-single .content .actions a {
+  margin-right: 10px;
+  color: #999999;
+  font-size: 10.5px;
+}
+.comment-single .content .actions a:hover {
+  color: #777777;
+}
+.comment-single .content .author {
+  color: #333333;
+  font-weight: 700;
 }
 .article-list-author {
   padding-top: 10px;
@@ -440,50 +421,5 @@ a:hover {
   .landing-input {
     display: inline-block;
     width: 96%;
-  }
-}
-@media (min-width: 992px) {
-  .sidebar {
-    position: fixed;
-    top: 80px;
-    width: 25%;
-  }
-  .author-bio dt {
-    width: 90px;
-  }
-  .author-bio dd {
-    margin-left: 110px;
-  }
-  .comment-author {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  .comment-author-name {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    border-radius: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 3px 40px 3px 10px;
-  }
-  .comment-author-avatar {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-  }
-  .comment-time {
-    position: absolute;
-    bottom: 0;
-    width: 150px;
-    right: 0;
-  }
-  .comment-single {
-    padding: 20px;
-    padding-right: 110px;
-    position: relative;
-    z-index: 1;
-    min-height: 120px;
   }
 }
