@@ -396,6 +396,11 @@ a:hover {
 .st-block--with-plus {
   cursor: pointer;
 }
+.loading-indicator {
+  position: fixed;
+  top: 70px;
+  right: 50px;
+}
 @media (max-width: 480px) {
   .landing-content {
     top: 0;
