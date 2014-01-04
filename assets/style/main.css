@@ -18,10 +18,12 @@ footer {
   background-color: #555555;
   color: #eeeeee;
 }
-a,
-a:hover {
+a {
   color: #333333;
-  text-decoration: underline;
+}
+a:hover {
+  color: #111111;
+  text-decoration: none;
 }
 .input-simple {
   outline: none;
@@ -225,23 +227,29 @@ a:hover {
 }
 .post-tags {
   font-size: 12px;
-  text-transform: uppercase;
   margin: 20px 0;
   text-align: right;
   line-height: 20px;
+  color: #999999;
 }
-.post-tags-list {
+.post-tags .tags {
   list-style-type: none;
 }
-.post-tags-list li {
+.post-tags .tags li {
   display: inline-block;
   margin-left: 10px;
+  font-size: 9.5px;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 700;
 }
-.post-tags-list li:before {
+.post-tags .tags li:before {
   content: "#";
+}
+.post-tags .tags li a {
+  text-decoration: none;
+}
+.post-tags .tags li a:hover {
+  color: #222222;
 }
 .post-content {
   font-size: 1.1em;
@@ -320,6 +328,17 @@ a:hover {
 .comment-content p {
   font-size: 1em;
   font-weight: 400;
+}
+.comment-tab-pane {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-top: none;
+  padding: 5px;
+}
+.comment-tab-pane .help-text {
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
 }
 .article-list-author {
   padding-top: 10px;
