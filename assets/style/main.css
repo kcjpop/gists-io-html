@@ -1,7 +1,11 @@
+html {
+  height: 100%;
+}
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 13px;
   background: #efefef;
+  height: 100%;
 }
 h1,
 h2,
@@ -41,6 +45,10 @@ a:hover {
 .main {
   padding-top: 70px;
   position: relative;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -105px;
+  padding-bottom: 105px;
 }
 .btn-write {
   position: fixed;
