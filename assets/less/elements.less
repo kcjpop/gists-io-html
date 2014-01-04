@@ -16,7 +16,10 @@ footer {
     color: @gray-lighter;
 }
 
-a, a:hover {
+a {
     color: @gray-dark;
-    text-decoration: underline;
+    &:hover {
+        color: (@gray-dark - #222);
+        text-decoration: none;
+    }
 }

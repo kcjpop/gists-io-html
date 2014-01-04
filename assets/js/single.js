@@ -1,6 +1,8 @@
 $(function() {
+    var _editors = $('textarea.yes-sir');
+
 	new SirTrevor.Editor({
-		el: $('textarea.yes-sir'),
+		el: _editors,
 		defaultType: 'Text'
 	});
 });

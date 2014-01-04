@@ -18,10 +18,12 @@ footer {
   background-color: #555555;
   color: #eeeeee;
 }
-a,
-a:hover {
+a {
   color: #333333;
-  text-decoration: underline;
+}
+a:hover {
+  color: #111111;
+  text-decoration: none;
 }
 .input-simple {
   outline: none;
@@ -224,24 +226,45 @@ a:hover {
   font-weight: 700;
 }
 .post-tags {
+  color: #999999;
   font-size: 12px;
-  text-transform: uppercase;
-  margin: 20px 0;
-  text-align: right;
   line-height: 20px;
+  margin: 20px 0;
+  padding-right: 75px;
+  position: relative;
+  text-align: right;
 }
-.post-tags-list {
+.post-tags .tags {
   list-style-type: none;
 }
-.post-tags-list li {
+.post-tags .tags li {
   display: inline-block;
   margin-left: 10px;
+  font-size: 9.5px;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: 11px;
+}
+.post-tags .tags li:before {
+  content: "#";
+}
+.post-tags .tags li a {
+  text-decoration: none;
+}
+.post-tags .tags li a:hover {
+  color: #222222;
+}
+.post-tags .author {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  text-align: center;
   font-weight: 700;
 }
-.post-tags-list li:before {
-  content: "#";
+.post-tags .author img {
+  background: #fff;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  max-width: 55px;
 }
 .post-content {
   font-size: 1.1em;
@@ -268,58 +291,50 @@ a:hover {
   white-space: nowrap;
   display: inline-block;
 }
-.comments {
-  margin-top: 30px;
+.comment-tab-pane {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-top: none;
+  padding: 5px;
 }
-.comments p {
-  line-height: 25px;
-}
-.comment-heading {
-  margin-top: 50px;
-}
-.comment-author {
-  font-size: 13px;
-}
-.comment-author-name {
-  font-weight: 700;
-  color: #555;
-  background-color: #fefefe;
-  padding: 3px 15px;
-  z-index: 1;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-left: -10px;
-  position: relative;
-}
-.comment-author-avatar {
-  border: 5px solid #ddd;
-  z-index: 2;
-  position: relative;
-  max-width: 75px;
-}
-.comment-time {
-  color: #999;
+.comment-tab-pane .help-text {
+  display: block;
   text-align: right;
-}
-.comment-content {
-  font-size: 14px;
-  color: #444;
+  color: #bbbbbb;
 }
 .comment-single {
-  padding: 20px;
+  padding: 20px 0 3px 20px;
+  position: relative;
   z-index: 1;
 }
 .comment-single:nth-child(2n) {
-  background-color: #e7e7e7;
+  background-color: #f8f8f8;
 }
-.comment-content {
-  padding: 0;
-  border: none;
-  margin-right: 15px;
+.comment-single .avatar {
+  max-width: 50px;
+  border: 1px solid #eeeeee;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  background-color: #fff;
 }
-.comment-content p {
-  font-size: 1em;
-  font-weight: 400;
+.comment-single .avatar:hover {
+  border-color: #999999;
+}
+.comment-single .content {
+  margin-left: 70px;
+}
+.comment-single .content .actions a {
+  margin-right: 10px;
+  color: #999999;
+  font-size: 10.5px;
+}
+.comment-single .content .actions a:hover {
+  color: #777777;
+}
+.comment-single .content .author {
+  color: #333333;
+  font-weight: 700;
 }
 .article-list-author {
   padding-top: 10px;
@@ -421,50 +436,5 @@ a:hover {
   .landing-input {
     display: inline-block;
     width: 96%;
-  }
-}
-@media (min-width: 992px) {
-  .sidebar {
-    position: fixed;
-    top: 80px;
-    width: 25%;
-  }
-  .author-bio dt {
-    width: 90px;
-  }
-  .author-bio dd {
-    margin-left: 110px;
-  }
-  .comment-author {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  .comment-author-name {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    border-radius: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 3px 40px 3px 10px;
-  }
-  .comment-author-avatar {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-  }
-  .comment-time {
-    position: absolute;
-    bottom: 0;
-    width: 150px;
-    right: 0;
-  }
-  .comment-single {
-    padding: 20px;
-    padding-right: 110px;
-    position: relative;
-    z-index: 1;
-    min-height: 120px;
   }
 }
