@@ -25,14 +25,13 @@
  * 
  */
 
-@import url(editor.css);
 /*------------------------------------*\
     $ELEMENTS
 \*------------------------------------*/
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
-	background: #efefef;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  background: #efefef;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +48,7 @@ footer {
 
 a, a:hover {
 	color: #333;
+	text-decoration: underline;
 }
 
 /*------------------------------------*\

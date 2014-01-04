@@ -36,4 +36,6 @@
 ehthumbs.db
 Thumbs.db
 
+*.orig
 bower_components/
+node_modules/
