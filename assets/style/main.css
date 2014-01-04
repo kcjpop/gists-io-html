@@ -40,6 +40,11 @@ a:hover {
 }
 .main {
   padding-top: 70px;
+  position: relative;
+}
+.btn-write {
+  position: fixed;
+  right: 100px;
 }
 .logo {
   font-weight: 700;
@@ -335,6 +340,9 @@ a:hover {
 .comment-single .content .author {
   color: #333333;
   font-weight: 700;
+}
+.article-list {
+  position: relative;
 }
 .article-list-author {
   padding-top: 10px;
