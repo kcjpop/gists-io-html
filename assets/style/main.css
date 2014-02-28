@@ -385,6 +385,9 @@ a:hover {
 .article-list-tags li:before {
   content: "#";
 }
+.article-intro {
+  color: #959595;
+}
 .article-single {
   margin-bottom: 50px;
 }
