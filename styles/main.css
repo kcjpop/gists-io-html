@@ -1,0 +1,71 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&amp;subset=latin);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding-top: 58px;
+}
+
+.ui.menu.navbar .item {
+    padding: 1.5em .95em;
+    position: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.ui.menu.navbar .item.logo {
+    font-weight: 700;
+    font-family: 'Roboto Slab', Times, serif;
+    color: #484848;
+    font-size: 1.5rem;
+    text-transform: none;
+    padding: .7em 1em;
+}
+
+.ui.menu .item>.input input {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ui.menu .item>.input input {
+    font-size: 0.8rem;
+}
+
+.landing-image {
+    background: transparent url(background.jpg) center center no-repeat;
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    display: relative;
+}
+
+.action.ui.grid {
+    padding-top: 25%;
+}
+
+.action.ui.header {
+    font-size: 2.5rem;
+    width: 550px; /* Compulsory for shape transformation */
+    cursor: pointer;
+    height: 100px;
+}
+
+.relaxed.ui.divider {
+    margin: 50px 20%;
+}
+
+.monospace.input {
+    font-family: monospace;
+}
+
+@media (max-width: 768px) {
+    .action.ui.header {
+        font-size: 1.7rem;
+        width: 300px;
+    }
+}
