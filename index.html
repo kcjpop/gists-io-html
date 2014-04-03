@@ -1,198 +1,239 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Home | Gists.io</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./assets/style/main.css" id="main-style">
-		<link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:400,700,900,300|Roboto+Slab:400,300&amp;subset=latin" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<header>
-			<nav class="navbar nav-white navbar-fixed-top" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle gists-navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Home | Gists.io</title>
+    <meta name="description" content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
 
-					<a class="navbar-brand logo" href="index.html">gists.io</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<form class="navbar-form navbar-right nav-search" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control input-sm" placeholder="Search by #hashtag">
-						</div>
-						<button type="submit" class="btn btn-success btn-sm">SIGN IN <i class="fa fa-github"></i></button>
-					</form>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
+    <!-- endbower -->
+    <!-- endbuild -->
 
-					<ul class="nav navbar-nav navbar-right gists-navbar-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#features">Features</a></li>
-						<li><a href="list.html">Expore</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</nav>
-		</header>
-		<main role="main" class="main">
-			<section class="landing-image">
-				<div class="landing-content">
-					<h1 class="landing-tagline">Share the ideas</h1>
-					<div class="landing-email-form">
-						<form role="form" class="form-inline">
-							<div class="form-group">
-								<label class="landing-label landing-gists-url">https://gists.io/</label>
-								<input autofocus autocomplete="off" type="text" class="form-control landing-input input-blogname input-simple" name="email" placeholder="username">
-							</div>
-							<div class="form-group">
-								<button type="submit" class="btn btn-primary">View blog</button>
-							</div>
-						</form>
-					</div>
-					<h3 class="landing-tagline landing-tagline-light">or enter your email</h3>
-					<div class="">
-						<form role="form" class="form-inline">
-							<div class="form-group">
-								<input type="email" class="form-control landing-input input-email input-simple" name="email" placeholder="No spam guarantee.">
-							</div>
-							<div class="form-group form-group-beta-apply">
-								<button type="submit" class="btn btn-success">Apply for private beta</button>
-							</div>
-						</form>
-					</div>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
 
-				</div>
-				<div class="landing-copyright">
-					Image by <a href="http://www.flickr.com/photos/miihaly/" target="_blank">mihaly</a>. CC-3.0 licensed.
-				</div>
-			</section>
+    <nav class="ui fixed menu navbar grid">
+        
+        <div class="computer tablet only row">
+            <a href="" class="item logo">gists.io</a>
 
-			<section class="container landing-features" id="features">
-				<h1 class="landing-heading">Why you'll fall in love</h1>
-				<div class="row landing-features-item">
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h2>Beautiful Markdown</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="landing-features-image-wrapper">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle hidden-xs landing-features-image">
-						</div>
-					</div>
-				</div>
-				<div class="row landing-features-item">
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="landing-features-image-wrapper">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle hidden-xs landing-features-image">
-						</div>
-					</div>
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h2>Pray</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-					</div>
-				</div>
-				<div class="row landing-features-item">
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h2>This is a very long title. I hope it's OK</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ipsam aut nobis autem unde mollitia iure repellat dolorum reprehenderit itaque cumque nihil veritatis quibusdam animi excepturi alias iste non ullam.</p>
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="landing-features-image-wrapper">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle hidden-xs landing-features-image">
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="right menu">
+                <a href="" class="active item"><i class="home icon"></i> Home</a>
+                <a href="" class="item"><i class="magic icon"></i> Features</a>
+                <a href="" class="item"><i class="rocket icon"></i> Expore</a>
+                <a href="" class="item"><i class="lab icon"></i> Contact</a>
 
-			<section class="container landing-screenshots">
-				<h1 class="landing-heading">See it in actions</h1>
-				<div class="row">
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-						<p><img src="http://placehold.it/250x150" alt="" class="img-thumbnail"></p>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-						<p><img src="http://placehold.it/250x150" alt="" class="img-thumbnail"></p>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-						<p><img src="http://placehold.it/250x150" alt="" class="img-thumbnail"></p>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-						<p><img src="http://placehold.it/250x150" alt="" class="img-thumbnail"></p>
-					</div>
-				</div>
-			</section>
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search by #hashtag">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
 
-			<section class="container landing-testimonials">
-				<h1 class="landing-heading">What did they said?</h1>
-				<div class="row">
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="landing-testimonials-item">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle">
-							<div class="caption">
-								<blockquote>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, expedita, ipsa, maiores unde dolorem sapiente consectetur repellendus omnis enim possimus magnam eum aliquid iure inventore molestiae consequuntur asperiores minima non.
-									<small>Someone from <cite>ABC Inc.</cite></small>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="landing-testimonials-item">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle">
-							<div class="caption">
-								<blockquote>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, expedita, ipsa, maiores unde dolorem sapiente consectetur repellendus omnis enim possimus magnam eum aliquid iure inventore molestiae consequuntur asperiores minima non.
-									<small>Someone from <cite>ABC Inc.</cite></small>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="landing-testimonials-item">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle">
-							<div class="caption">
-								<blockquote>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, expedita, ipsa, maiores unde dolorem sapiente consectetur repellendus omnis enim possimus magnam eum aliquid iure inventore molestiae consequuntur asperiores minima non.
-									<small>Someone from <cite>ABC Inc.</cite></small>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="landing-testimonials-item">
-							<img src="http://placehold.it/150x150" alt="" class="img-circle">
-							<div class="caption">
-								<blockquote>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, expedita, ipsa, maiores unde dolorem sapiente consectetur repellendus omnis enim possimus magnam eum aliquid iure inventore molestiae consequuntur asperiores minima non.
-									<small>Someone from <cite>ABC Inc.</cite></small>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+                <div class="item">
+                    <div class="ui teal icon button">Sign In <i class="user icon"></i></div>
+                </div>
+            </div>
+        </div>
+    </nav> <!-- end nav -->
 
-		<footer>
-			<p class="text-right">&copy; InHuman 2013</p>	
-		</footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script>
-$(function() {
-	$('section.landing-image').css('height', $(window).height() - 50);
-});
-</script>
-	</body>
+    <main>
+        
+        <section class="landing">
+            <div class="ui page action grid">
+                <div class="row">
+                    <div class="center aligned column">
+                        
+                        <div class="ui view shape">
+                            <div class="sides">
+                                <div class="active side">
+                                    <h1 class="ui action header">Choose a blog to view</h1>
+                                </div>
+                                <div class="side">
+                                    <form action="" class="ui form">
+                                        <div class="inline fields">
+                                            <div class="field">
+                                                <div class="ui huge teal pointing right label">
+                                                https://gists.io/
+                                                </div>
+                                                <input placeholder="gitstio" type="text" class="monospace small input">
+                                            </div>
+                                            <div class="field">
+                                                <button class="ui labeled teal right icon button">View <i class="rocket icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui relaxed horizontal divider">OR</div>
+                        
+                        <div class="ui subscribe shape">
+                            <div class="sides">
+                                <div class="active side">
+                                    <h1 class="ui action header">Apply for private beta</h1>
+                                </div>
+                                <div class="side">
+                                    <form class="ui form">
+                                        <div class="inline fields">
+                                            <div class="field">
+                                                <label>Email</label>
+                                                <input type="text" placeholder="john@example.com" class="small input">
+                                            </div>
+                                            <div class="field">
+                                                <button class="ui teal icon button">
+                                                    We&rsquo;ll never spam you
+                                                    <i class="heart icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features ui subpage">
+
+            <div class="ui page grid">
+                
+                <div class=" row">
+                    <div class="column">
+                        <h1 class="ui teal header">Why you&rsquo;ll fall in love</h1>
+                    </div>
+                </div>
+
+                <div class="two column computer tablet only row">
+                    <div class="ten wide column">
+                        <h3 class="ui header">Beautiful editor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="six wide center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+                <div class="two column computer tablet only row">
+                    <div class="ten wide column">
+                        <h3 class="ui header">Utilize gists.github.com</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="six wide center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+                <div class="two column computer tablet only row">
+                    <div class="ten wide column">
+                        <h3 class="ui header">Command-line supported</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="six wide center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+                <!-- For mobile -->
+                <div class="one column mobile only row">
+                    <div class="column">
+                        <h3 class="ui header">Beautiful editor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+                <div class="one column mobile only row">
+                    <div class="column">
+                        <h3 class="ui header">Utilize gists.github.com</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+                <div class="one column mobile only row">
+                    <div class="column">
+                        <h3 class="ui header">Command-line supported</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga, quas, maiores, rerum sequi aliquam nostrum harum labore dolore laborum consectetur a eaque sapiente iure voluptatem distinctio et? Reiciendis, maiores!</p>
+                    </div>
+                    <div class="center aligned column">
+                        <p><img src="//placehold.it/150x150" alt="" class="ui inline circular image"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> <!-- Features -->
+
+        <section class="testimonials ui subpage">
+            <div class="ui page grid">
+                <div class="row">
+                    <div class="column">
+                        <h1 class="ui teal header">From some lovely folks</h1>
+                    </div>
+                </div>
+
+                <div class="three column row">
+                    <div class="center aligned column">
+                        <img src="//placehold.it/100x100" alt="" class="ui circular inline image">
+                        <div class="ui pointing large lowered label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, fuga, beatae magnam dolorem sunt doloremque nemo nisi nihil perferendis eveniet omnis quibusdam sed nesciunt deserunt enim dolores dolorum necessitatibus praesentium.
+                            <p class="company"><small>From <a href="#">ABC Inc</a>.</small></p>
+                        </div>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="//placehold.it/100x100" alt="" class="ui circular inline image">
+                        <div class="ui pointing large lowered label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, fuga, beatae magnam dolorem sunt doloremque nemo nisi nihil perferendis eveniet omnis quibusdam sed nesciunt deserunt enim dolores dolorum necessitatibus praesentium.
+                            <p class="company"><small>From <a href="#">ABC Inc</a>.</small></p>
+                        </div>
+                    </div>
+                    <div class="center aligned column">
+                        <img src="//placehold.it/100x100" alt="" class="ui circular inline image">
+                        <div class="ui pointing large lowered label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, fuga, beatae magnam dolorem sunt doloremque nemo nisi nihil perferendis eveniet omnis quibusdam sed nesciunt deserunt enim dolores dolorum necessitatibus praesentium.
+                            <p class="company"><small>From <a href="#">ABC Inc</a>.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main> <!-- end main -->
+
+    <footer class="ui grid">
+        <div class="row">
+            <div class="right aligned column">
+                <p>&copy; InHuman 2104 <i class="code icon"></i> with <i class="heart icon"></i> of Erlang</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/build.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
 </html>
